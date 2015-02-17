@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Intranet</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  
+
+  Client Intranet Portal
+	
+	<% unless user_signed_in? %> 
+    <h3><%= link_to "Login", new_user_session_path %> </h3>
+	<% else %>  
+	  <h3><%= link_to current_user.email, edit_user_registration_path(current_user) %> |
+	      <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+	  </h3>
+	<% end %>
+
+  <% if notice %>  
+	  <div class="notice"><%= notice %></div>
+	<% elsif alert %>  
+	  <div class="alert"><%= alert %></div>
+	<% end %>
+
+<%= yield %>
+
+</body>
+</html>

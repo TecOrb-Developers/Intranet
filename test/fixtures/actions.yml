@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  communication_id: 
+  title: MyString
+  description: MyText
+  assigned_to: 1
+  assigned_by: 1
+  due_date: 2015-02-17
+  date_completed: 2015-02-17
+
+two:
+  communication_id: 
+  title: MyString
+  description: MyText
+  assigned_to: 1
+  assigned_by: 1
+  due_date: 2015-02-17
+  date_completed: 2015-02-17

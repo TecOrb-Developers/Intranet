@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 
+  communication_id: 
+  file_type: MyString
+  category_id: 
+  file_name: 
+
+two:
+  user_id: 
+  communication_id: 
+  file_type: MyString
+  category_id: 
+  file_name: 

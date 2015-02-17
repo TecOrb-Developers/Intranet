@@ -1,0 +1,21 @@
+defaults: &defaults
+  adapter: postgresql
+  username: postgres
+  password: postgres
+  host: localhost
+  port: 5432
+  pool: 10
+  timeout: 5000
+
+development:
+  database: Intranet_development
+  <<: *defaults
+
+test:
+  database: Intranet_test
+  <<: *defaults
+
+production:
+  database: Intranet_production
+  <<: *defaults
+
